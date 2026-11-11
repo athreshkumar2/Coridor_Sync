@@ -1,0 +1,58 @@
+# Generic Python .gitignore + project-specific exclusions
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment files — NEVER commit real credentials
+.env
+.env.local
+.env.*.local
+
+# pytest / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+
+# Alembic
+# (versions/ is committed; only __pycache__ inside it is ignored)
+
+# Node / npm
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Vite build output
+frontend/dist/
+frontend/.vite/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Docker
+*.log
+
+# OSRM preprocessed data (large binary files)
+infra/osrm/*.osrm
+infra/osrm/*.osrm.*
+infra/osrm/*.pbf
